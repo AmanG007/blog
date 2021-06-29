@@ -1,19 +1,14 @@
-<!DOCTYPE html>
+<x-layout>
 
-<head>
-    <title>My Blog</title>
-    <link rel="stylesheet" href="/app.css">
-</head>
-<body>
         <article>
             <h1>
-                <?= $post->title; ?> 
+                {{ $post->title }}
             </h1>
 
             <div>
-                <?= $post->body; ?>
+                 {!! $post->body !!}
             </div>
         </article>
 
         <a href="/">Go Back</a>
-</body>
+</x-layout>
